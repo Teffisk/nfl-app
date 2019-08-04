@@ -1,7 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
+import Homepage from "./Components/Homepage";
+import "./App.css";
 
-function App() {
-  return <div className="App">Titans>Seahawks</div>;
+class App extends Component {
+  render() {
+    return <Homepage />;
+  }
 }
 
 export default App;
