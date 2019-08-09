@@ -8,11 +8,11 @@ class TeamForm extends Component {
           <label>Enter Team Name</label>
         </div>
         <select onChange={this.props.handleOnChange}>
-          <option disabled selected>
+          <option disabled defaultValue>
             Pick your team
           </option>
-          <option>Tennesee Titans</option>
-          <option>Seattle Seahawks</option>
+          <option value="ten">Tennesee Titans</option>
+          <option value="sea">Seattle Seahawks</option>
         </select>
       </form>
     );
