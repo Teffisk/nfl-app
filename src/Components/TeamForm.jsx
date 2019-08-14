@@ -14,6 +14,7 @@ class TeamForm extends Component {
           onChange={this.props.handleOnChange}
           defaultValue="Pick your team"
         >
+          <option disabled>Pick your team</option>
           <option value="TEN">Tennesee Titans</option>
           <option value="SEA">Seattle Seahawks</option>
           <option value="BUC">Tampa Bay Buccaneers</option>
