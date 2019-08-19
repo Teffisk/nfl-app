@@ -6,6 +6,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import "./Homepage.css";
 
+
 class Homepage extends Component {
   state = {
     team: ""
@@ -26,10 +27,14 @@ class Homepage extends Component {
     const testUrl = `https://api.mysportsfeeds.com/v1.2/pull/nhl/2019-2020-regular/overall_team_standings.json`;
     const scheduleUrl = `https://api.mysportsfeeds.com/v1.2/pull/nfl/2019-regular/full_game_schedule.json`;
     const url = `https://api.mysportsfeeds.com/v1.2/pull/nfl/2019-regular/roster_players.json?fordate=20190909&team=${team}`;
+
+
+
+
+
     fetch(testUrl, {
       headers: {
-        Authorization: `Bearer ${api_key}`
-      }
+        'Authorization': 'Basic '+ btoa (userName +":"+ password)      }
     })
       .then(response => {
         if (response.status !== 200) {
